@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  
+</head>
+<body>
+  <div class="container">
+    <div class="sec-1">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="sec-2">
+      <button class="blue"><h3>Try it free 7 days</h3><p> then $20/mo. thereafter</p></button>
+      <form class="submiting" name="submiting">
+        <input placeholder="First Name"class="fn" name="First_name" type="text" size="30">
+        <input placeholder="Age" class="age" name="Age" type="text" size="3">
+        <input placeholder="Email Address" class="e" name="Email" type="email" size="30">
+        <input placeholder="Password" class="ps" name="Password" type="password" size="8">
+       <p><input type="submit" class="green" value="Claim your free trial!" onclick="checkForm(); return-false;"></p>
+
+        <p>By clicking the button, you are agreeing to our<a href="#">Terms and Services</a></p>
+
+      </form>
+    </div>
+
+  </div>
+  <script type="text/javascript">
+    function checkForm() {
+        var formName = document.submiting.First_name;
+        var formAge = document.submiting.Age;
+        var formEmail = document.submiting.Email;
+        var formps = document.submiting.Password;
+        if (formName.value.indexOf(" ") == -1){
+            alert("please enter your first name.");
+            formName.focus();
+            return;
+        }
+        let formAgeValue = parseInt(formAge.value);
+            
+            if (formAgeValue < 8 || formAgeValue > 58){
+                alert("Age must be  between 8 and 58");
+                formAge.focus();
+                return;
+            }
+        if (formEmail.value.indexOf("@") == -1 ||
+        formEmail.value.indexOf(".") == -1){
+            alert("please enter a valid email address.");
+            formEmail.focus();
+            return;
+        }
+        var passw=  /^[A-Za-z]\w{7,14}$/;
+        if(formps.value.match(passw))
+        { 
+          alert('Correct, try another...')
+          return true;
+          }
+          else
+          { 
+            alert('Enter the suitable password...!')
+            return false;
+            }
+       
+       
+       
+        document.submiting.submit();
+        
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 950px;
+}
+
+.sec-1 {
+  color: white;
+}
+h1 {
+  /* width: 400px; */
+  max-width: 400px;
+  font-weight: 700;
+  font-size: 38px;
+}
+.sec-1 p {
+  padding-top: 20px;
+  padding-right: 30px;
+  max-width: 500px;
+  font-weight: 500;
+}
+.sec-2 {
+  display: block;
+  min-width: 400px;
+}
+.blue {
+  min-width: 400px;
+  height: 60px;
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  border: solid hsl(248, 32%, 49%);
+  border-radius: 12px;
+  font-size: 14px;
+}
+.blue h3,
+.blue p {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.submiting {
+  background-color: white;
+  border-radius: 12px;
+  min-height: 50vh;
+  padding: 40px;
+  align-items: center;
+}
+input {
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin-bottom: 20px;
+  text-align: start;
+  font-weight: 400;
+}
+.green {
+  background-color: hsl(154, 59%, 51%);
+  min-width: 330px;
+  color: white;
+  height: 40px;
+  border: solid hsl(154, 59%, 51%);
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.sec-2 p {
+  font-size: 9px;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
