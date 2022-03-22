@@ -66,6 +66,7 @@
     "find-up": "^2.1.0",
     "flat-cache": "^3.0.4",
     "flatted": "^3.2.5",
+    "font-awesome": "^4.7.0",
     "fs.realpath": "^1.0.0",
     "function-bind": "^1.1.1",
     "functional-red-black-tree": "^1.0.1",
